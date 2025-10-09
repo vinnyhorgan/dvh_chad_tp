@@ -31,3 +31,30 @@ this will be a step by step description of how i setup my thinkpad linux configu
 
 - download the latest **x86_64 base glibc live image** for void [here](https://repo-default.voidlinux.org/live/current/)
 - flash to a usb stick using [balena etcher](https://etcher.balena.io/) or the **dd** command
+- boot and follow the [installation instructions](https://docs.voidlinux.org/installation/live-images/guide.html)
+
+-> for help with the partitioning i followed [this guide](https://www.youtube.com/watch?v=IBg66Us2f6g)
+
+## first boot
+
+nice! we're in. first thing to run is a nice:
+
+```bash
+sudo xbps-install -Su
+```
+
+it will probably ask to update the package manager, just follow the instructions.
+
+then, priorities first:
+
+```bash
+sudo xbps-install fastfetch
+fastfetch
+```
+
+ahh, perfect.
+
+- update [firmware](https://docs.voidlinux.org/config/firmware.html)
+- setup [cron](https://docs.voidlinux.org/config/cron.html) and [ssd](https://docs.voidlinux.org/config/ssd.html)
+
+TODO: section 3.12
