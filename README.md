@@ -79,3 +79,13 @@ cool, now we have a good functional base, to aid in this process i have installe
 ```bash
 sudo xbps-install micro
 ```
+
+## base configuration
+
+before starting the detailed configuration process let's get the all the basics down. let's start with the shell:
+
+```bash
+sudo xbps-install fish-shell
+chsh -s $(which fish)
+```
+
