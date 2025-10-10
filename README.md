@@ -56,5 +56,26 @@ ahh, perfect.
 
 - update [firmware](https://docs.voidlinux.org/config/firmware.html)
 - setup [cron](https://docs.voidlinux.org/config/cron.html) and [ssd](https://docs.voidlinux.org/config/ssd.html)
+- disable acpid service, setup elogind and tlp, explained all [here](https://docs.voidlinux.org/config/power-management.html)
+- setup [dbus](https://docs.voidlinux.org/config/session-management.html)
+- install all [graphics drivers](https://docs.voidlinux.org/config/graphical-session/graphics-drivers/index.html)
 
-TODO: section 3.12
+nearly there:
+
+```bash
+sudo xbps-install nerd-fonts
+sudo xbps-install foot
+sudo xbps-install sway
+```
+
+finally, running this command we should get into the graphical environment and be able to launch terminals using super + enter:
+
+```bash
+dbus-run-session sway
+```
+
+cool, now we have a good functional base, to aid in this process i have installed some extra packages at this point:
+
+```bash
+sudo xbps-install micro
+```
